@@ -8,8 +8,12 @@ COPY index.html /usr/share/nginx/html/
 COPY styles.css /usr/share/nginx/html/
 COPY fotoSdResolve.jpeg /usr/share/nginx/html/
 
-# Etapa 3: Expor a porta
-# Informamos ao Docker que o contêiner irá escutar na porta 80.
-EXPOSE 80
+# Etapa 3: Copiar a configuração personalizada do Nginx
+# Isso garante que o Nginx escute na porta 5666.
+COPY default.conf /etc/nginx/conf.d/default.conf
+
+# Etapa 4: Expor a porta
+# Informamos ao Docker que o contêiner irá escutar na porta 5666.
+EXPOSE 5666
 
 # O comando para iniciar o Nginx já está incluído na imagem base, então não precisamos de um CMD.
