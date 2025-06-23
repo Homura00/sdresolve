@@ -1,0 +1,75 @@
+version: '3.8'
+
+services:
+  sd-resolv-website:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: sd-resolv-web-prod
+    ports:
+      - "80:80"
+      - "443:443"
+    restart: always
+    environment:
+      - NGINX_HOST=www.sd-resolv.com.br
+      - NGINX_PORT=80
+    volumes:
+      # Logs persistentes
+      - ./logs:/var/log/nginx
+      # Certificados SSL (se usando)
+      - ./ssl:/etc/nginx/ssl:ro
+      # Configuração customizada do Nginx
+      - ./nginx.prod.conf:/etc/nginx/conf.d/default.conf:ro
+    networks:
+      - sd-resolv-prod-network
+    labels:
+      # Labels para Traefik (se usando)
+      - "traefik.enable=true"
+      - "traefik.http.routers.sd-resolv.rule=Host(`www.sd-resolv.com.br`)"
+      - "traefik.http.routers.sd-resolv.entrypoints=websecure"
+      - "traefik.http.routers.sd-resolv.tls.certresolver=letsencrypt"
+      - "traefik.http.services.sd-resolv.loadbalancer.server.port=80"
+      # Redirecionamento HTTP para HTTPS
+      - "traefik.http.routers.sd-resolv-http.rule=Host(`www.sd-resolv.com.br`)"
+      - "traefik.http.routers.sd-resolv-http.entrypoints=web"
+      - "traefik.http.routers.sd-resolv-http.middlewares=redirect-to-https"
+      - "traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 256M
+        reservations:
+          cpus: '0.1'
+          memory: 64M
+
+  # Serviço de monitoramento (opcional)
+  watchtower:
+    image: containrrr/watchtower
+    container_name: sd-resolv-watchtower
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      - WATCHTOWER_CLEANUP=true
+      - WATCHTOWER_POLL_INTERVAL=3600
+      - WATCHTOWER_INCLUDE_STOPPED=true
+    restart: unless-stopped
+    networks:
+      - sd-resolv-prod-network
+
+networks:
+  sd-resolv-prod-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
+
+volumes:
+  nginx-logs:
+    driver: local

@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SD-Resolv - Soluções Financeiras e Jurídicas</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#inicio">
+                <img src="fotoSdResolve.jpeg" alt="SD-Resolv Logo" class="logo-img me-2">
+                <span class="text-gradient fw-bold">SD-Resolv</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#quem-somos">Quem Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#solucoes">Soluções</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#como-funciona">Como Funciona</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#depoimentos">Depoimentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-gradient text-white py-5" style="margin-top: 76px;">
+        <div class="container">
+            <div class="row align-items-center min-vh-75">
+                <div class="col-lg-6">
+                    <h1 class="fw-bold mb-4">
+                        Soluções Financeiras e Jurídicas sob Medida para Você
+                    </h1>
+                    <p class="lead mb-4">
+                        A SD-Resolv conecta você às melhores oportunidades de crédito, assessoria jurídica e compra de precatórios, com segurança e agilidade.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#solucoes" class="btn btn-light btn-lg px-4 py-2">
+                            <i class="fas fa-arrow-right me-2"></i>Conheça Nossas Soluções
+                        </a>
+                        <a href="https://wa.me/6286069094?text=Gostaria%20de%20saber%20mais%20sobre%20a%20SD%20Resolv" target="_blank" class="btn btn-outline-light btn-lg px-4 py-2" style="position: relative; z-index: 1000; pointer-events: auto;" onclick="console.log('Botão Fale Conosco clicado!');">
+                            <i class="fab fa-whatsapp me-2"></i>Fale Conosco
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="hero-logo-container">
+                        <img src="fotoSdResolve.jpeg" alt="SD-Resolv" class="hero-logo mb-3">
+                        <div class="hero-logo-overlay">
+                            <i class="fas fa-handshake fa-3x text-white opacity-75"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quem Somos -->
+    <section id="quem-somos" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                    <div class="about-logo-container">
+                        <img src="fotoSdResolve.jpeg" alt="SD-Resolv" class="about-logo">
+                        <div class="about-logo-badge">
+                            <i class="fas fa-certificate text-primary"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <h2 class="section-title mb-4">Quem Somos</h2>
+                    <p class="lead mb-4">
+                        A <strong>SD-Resolv</strong> é uma empresa de intermediação comercial especializada em conectar clientes às melhores oportunidades do mercado. Trabalhamos com parceiros selecionados nas áreas de crédito, assessoria jurídica e compra de precatórios/RPVs.
+                    </p>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="p-4 rounded shadow-sm h-100" style="background-color: #EFEDE3;">
+                                <h5 class="mb-3" style="color: #B99D57;">
+                                    <i class="fas fa-bullseye me-2"></i>Nossa Missão
+                                </h5>
+                                <p class="mb-0 small" style="color: #313131;">
+                                    Oferecer atendimento transparente, ágil e personalizado, gerando segurança em cada etapa do processo.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-4 rounded shadow-sm h-100" style="background-color: #EFEDE3;">
+                                <h5 class="mb-3" style="color: #B99D57;">
+                                    <i class="fas fa-eye me-2"></i>Nossa Visão
+                                </h5>
+                                <p class="mb-0 small" style="color: #313131;">
+                                    Ser referência nacional em intermediação de soluções financeiras e jurídicas, conectando pessoas às melhores oportunidades.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Soluções -->
+    <section id="solucoes" class="py-5">
+        <div class="container">
+            <div class="text-center section-header">
+                <h2 class="section-title">Nossas Soluções</h2>
+                <p class="lead text-muted mt-3">Conectamos você às melhores oportunidades do mercado</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Soluções Financeiras -->
+                <div class="col-lg-4">
+                    <div class="card h-100 border-0 shadow card-hover">
+                        <div class="card-body">
+                            <div class="text-center mb-4">
+                                <div class="rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px; background: linear-gradient(135deg, #B99D57 0%, #D4B86A 100%);">
+                                    <i class="fas fa-dollar-sign fa-2x" style="color: #313131;"></i>
+                                </div>
+                            </div>
+                            <h4 class="card-title text-center">Soluções Financeiras</h4>
+                            <p class="card-text text-muted">
+                                Oferecemos diversos produtos de crédito, com condições acessíveis e atendimento personalizado.
+                            </p>
+
+                            <h6 class="card-subtitle">Produtos:</h6>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Empréstimo consignado</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Crédito pessoal</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Crédito para negativado</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Crédito para autônomos</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Antecipação de FGTS</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Refinanciamento</li>
+                            </ul>
+                            
+                            <div class="bg-light p-3 rounded mt-3">
+                                <small class="text-muted">
+                                    <i class="fas fa-shield-alt me-1"></i>
+                                    Parceria com financeiras seguras e regulamentadas
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Assessoria Jurídica -->
+                <div class="col-lg-4">
+                    <div class="card h-100 border-0 shadow card-hover">
+                        <div class="card-body">
+                            <div class="text-center mb-4">
+                                <div class="rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px; background: #313131;">
+                                    <i class="fas fa-balance-scale fa-2x" style="color: #EFEDE3;"></i>
+                                </div>
+                            </div>
+                            <h4 class="card-title text-center">Assessoria Jurídica</h4>
+                            <p class="card-text text-muted">
+                                Representamos um escritório referência em Goiânia, com atuação em todo o Brasil.
+                            </p>
+
+                            <h6 class="card-subtitle">Áreas de atuação:</h6>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-gavel text-primary me-2"></i>Direito Previdenciário</li>
+                                <li class="mb-2"><i class="fas fa-graduation-cap text-primary me-2"></i>Direitos dos professores</li>
+                                <li class="mb-2"><i class="fas fa-coins text-primary me-2"></i>Restituições</li>
+                            </ul>
+                            
+                            <h6 class="card-subtitle">Diferenciais:</h6>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Equipe experiente</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Análise inicial gratuita</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Atendimento transparente</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Precatórios -->
+                <div class="col-lg-4">
+                    <div class="card h-100 border-0 shadow card-hover">
+                        <div class="card-body">
+                            <div class="text-center mb-4">
+                                <div class="rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px; background: #EFEDE3;">
+                                    <i class="fas fa-file-invoice-dollar fa-2x" style="color: #313131;"></i>
+                                </div>
+                            </div>
+                            <h4 class="card-title text-center">Precatórios & RPVs</h4>
+                            <p class="card-text text-muted">
+                                Transforme seu direito em dinheiro com segurança e respaldo jurídico.
+                            </p>
+                            
+                            <div class="d-flex align-items-start mb-3">
+                                <div class="rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 30px; height: 30px; min-width: 30px; background-color: #B99D57;">
+                                    <span class="fw-bold" style="color: #313131;">1</span>
+                                </div>
+                                <div>
+                                    <h6 class="mb-1">Análise jurídica detalhada</h6>
+                                    <small class="text-muted">Situação completa da ação</small>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-start mb-3">
+                                <div class="rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 30px; height: 30px; min-width: 30px; background-color: #B99D57;">
+                                    <span class="fw-bold" style="color: #313131;">2</span>
+                                </div>
+                                <div>
+                                    <h6 class="mb-1">Melhor proposta</h6>
+                                    <small class="text-muted">+15 fundos e bancos parceiros</small>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-start mb-3">
+                                <div class="rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 30px; height: 30px; min-width: 30px; background-color: #B99D57;">
+                                    <span class="fw-bold" style="color: #313131;">3</span>
+                                </div>
+                                <div>
+                                    <h6 class="mb-1">Acompanhamento completo</h6>
+                                    <small class="text-muted">Suporte até o pagamento</small>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-light p-3 rounded mt-3">
+                                <small class="text-muted">
+                                    <i class="fas fa-map-marker-alt me-1"></i>
+                                    Atendemos todo o Brasil
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como Funciona -->
+    <section id="como-funciona" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center section-header">
+                <h2 class="section-title">Como Funciona</h2>
+                <p class="lead text-muted mt-3">Processo simples e transparente</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-3 text-center">
+                    <div class="rounded-circle d-inline-flex align-items-center justify-content-center mb-3 shadow-sm" style="width: 80px; height: 80px; background-color: #EFEDE3;">
+                        <i class="fas fa-phone fa-2x" style="color: #B99D57;"></i>
+                    </div>
+                    <h5 style="color: #313131;">1. Contato</h5>
+                    <p class="text-muted">Entre em contato conosco através dos nossos canais</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="rounded-circle d-inline-flex align-items-center justify-content-center mb-3 shadow-sm" style="width: 80px; height: 80px; background-color: #EFEDE3;">
+                        <i class="fas fa-search fa-2x" style="color: #B99D57;"></i>
+                    </div>
+                    <h5 style="color: #313131;">2. Análise</h5>
+                    <p class="text-muted">Analisamos seu perfil e necessidades gratuitamente</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="rounded-circle d-inline-flex align-items-center justify-content-center mb-3 shadow-sm" style="width: 80px; height: 80px; background-color: #EFEDE3;">
+                        <i class="fas fa-handshake fa-2x" style="color: #B99D57;"></i>
+                    </div>
+                    <h5 style="color: #313131;">3. Proposta</h5>
+                    <p class="text-muted">Apresentamos as melhores opções do mercado</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="rounded-circle d-inline-flex align-items-center justify-content-center mb-3 shadow-sm" style="width: 80px; height: 80px; background-color: #EFEDE3;">
+                        <i class="fas fa-check-circle fa-2x" style="color: #B99D57;"></i>
+                    </div>
+                    <h5 style="color: #313131;">4. Solução</h5>
+                    <p class="text-muted">Acompanhamos todo o processo até a conclusão</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section id="depoimentos" class="py-5">
+        <div class="container">
+            <div class="text-center section-header">
+                <h2 class="section-title">Depoimentos</h2>
+                <p class="lead text-muted mt-3">O que nossos clientes dizem sobre nós</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="card-text mb-3">
+                                "Excelente atendimento! Consegui meu empréstimo consignado com as melhores condições do mercado. Recomendo!"
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+                                    <i class="fas fa-user text-white"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-0">Maria Silva</h6>
+                                    <small class="text-muted">Aposentada</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="card-text mb-3">
+                                "A assessoria jurídica foi fundamental para conseguir minha aposentadoria. Profissionais competentes e dedicados."
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <div class="bg-success rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+                                    <i class="fas fa-user text-white"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-0">João Santos</h6>
+                                    <small class="text-muted">Servidor Público</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="card-text mb-3">
+                                "Vendi meu precatório com total segurança e transparência. Processo rápido e eficiente!"
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <div class="bg-warning rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+                                    <i class="fas fa-user text-white"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-0">Ana Costa</h6>
+                                    <small class="text-muted">Professora</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-5" style="background-color: #313131; color: #EFEDE3;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="mb-4" style="color: #B99D57;">Entre em Contato</h2>
+                    <p class="lead section-content" style="color: #EFEDE3;">
+                        Estamos prontos para ajudar você a encontrar a melhor solução. Entre em contato conosco!
+                    </p>
+
+                    <div class="row g-4 mb-5 justify-content-center">
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <a href="https://wa.me/6286069094?text=Gostaria%20de%20saber%20mais%20sobre%20a%20SD%20Resolv" target="_blank" class="text-decoration-none">
+                                    <div class="bg-success rounded-circle d-inline-flex align-items-center justify-content-center mb-3 contact-icon" style="width: 80px; height: 80px;">
+                                        <i class="fab fa-whatsapp fa-2x"></i>
+                                    </div>
+                                    <h5 style="color: #B99D57;">WhatsApp</h5>
+                                    <p class="mb-0" style="color: #EFEDE3;">Clique para conversar</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <div class="rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px; background-color: #EFEDE3;">
+                                    <i class="fas fa-envelope fa-2x" style="color: #313131;"></i>
+                                </div>
+                                <h5 style="color: #B99D57;">E-mail</h5>
+                                <p class="mb-0" style="color: #EFEDE3;">contato@sd-resolv.com.br</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-4 rounded" style="background-color: rgba(239, 237, 227, 0.1);">
+                        <h4 class="mb-3" style="color: #B99D57;">
+                            <i class="fas fa-clock me-2"></i>Horário de Atendimento
+                        </h4>
+                        <p class="mb-2" style="color: #EFEDE3;">Segunda a Sexta: 8h às 18h</p>
+                        <p class="mb-0" style="color: #EFEDE3;">Sábado: 8h às 12h</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center mb-2 mb-md-0">
+                        <img src="fotoSdResolve.jpeg" alt="SD-Resolv" class="footer-logo me-2">
+                        <span class="fw-bold">SD-Resolv</span>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <p class="mb-0 small">
+                        &copy; 2024 SD-Resolv. Todos os direitos reservados.
+                    </p>
+                </div>
+                <div class="col-md-4 text-md-end text-center">
+                    <div class="d-flex justify-content-md-end justify-content-center gap-3">
+                        <a href="#" class="text-white footer-social-link">
+                            <i class="fab fa-facebook fa-lg"></i>
+                        </a>
+                        <a href="#" class="text-white footer-social-link">
+                            <i class="fab fa-instagram fa-lg"></i>
+                        </a>
+                        <a href="#" class="text-white footer-social-link">
+                            <i class="fab fa-linkedin fa-lg"></i>
+                        </a>
+                        <a href="https://wa.me/6286069094?text=Gostaria%20de%20saber%20mais%20sobre%20a%20SD%20Resolv" target="_blank" class="text-white footer-social-link">
+                            <i class="fab fa-whatsapp fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const target = document.querySelector(targetId);
+                if (target) {
+                    const offsetTop = target.offsetTop - 80; // Account for fixed navbar
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+
+                    // Add active state to clicked button
+                    this.classList.add('clicked');
+                    setTimeout(() => {
+                        this.classList.remove('clicked');
+                    }, 300);
+                }
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animated');
+                }
+            });
+        }, observerOptions);
+
+        // Add animation classes to elements
+        document.addEventListener('DOMContentLoaded', function() {
+            const animateElements = document.querySelectorAll('.card, .process-step, .testimonial-card');
+            animateElements.forEach(el => {
+                el.classList.add('animate-on-scroll');
+                observer.observe(el);
+            });
+        });
+
+        // Add loading animation
+        window.addEventListener('load', function() {
+            document.body.classList.add('loaded');
+        });
+
+        // Add hover effects to buttons
+        document.querySelectorAll('.btn').forEach(btn => {
+            btn.addEventListener('mouseenter', function() {
+                this.classList.add('pulse-hover');
+            });
+            btn.addEventListener('mouseleave', function() {
+                this.classList.remove('pulse-hover');
+            });
+        });
+
+        // Counter animation for statistics (if needed in future)
+        function animateCounter(element, target, duration = 2000) {
+            let start = 0;
+            const increment = target / (duration / 16);
+            const timer = setInterval(() => {
+                start += increment;
+                element.textContent = Math.floor(start);
+                if (start >= target) {
+                    element.textContent = target;
+                    clearInterval(timer);
+                }
+            }, 16);
+        }
+
+        // Ensure WhatsApp buttons are clickable
+        document.addEventListener('DOMContentLoaded', function() {
+            // Find all WhatsApp links
+            const whatsappLinks = document.querySelectorAll('a[href*="wa.me"]');
+
+            whatsappLinks.forEach(link => {
+                // Ensure the link is clickable
+                link.style.pointerEvents = 'auto';
+                link.style.cursor = 'pointer';
+
+                // Add click event listener as backup
+                link.addEventListener('click', function(e) {
+                    // Don't prevent default, let the link work normally
+                    console.log('WhatsApp link clicked:', this.href);
+                });
+
+                // Add visual feedback
+                link.addEventListener('mouseenter', function() {
+                    this.style.opacity = '0.8';
+                });
+
+                link.addEventListener('mouseleave', function() {
+                    this.style.opacity = '1';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
