@@ -517,33 +517,76 @@ a[href*="wa.me"]:hover .contact-icon {
 }
 
 /* Footer enhancement */
-footer {
-    background: linear-gradient(135deg, #313131 0%, #404040 100%);
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.footer-item {
+    flex: 1 1 300px; /* Flex-grow, flex-shrink, flex-basis */
+    text-align: center;
+}
+
+.footer-logo-container {
+    justify-content: flex-start;
+    display: flex;
+}
+
+.footer-copyright {
+    text-align: center;
+}
+
+.footer-socials {
+    justify-content: flex-end;
+    display: flex;
 }
 
 .footer-logo {
-    height: 35px;
-    width: auto;
-    border-radius: 6px;
-    object-fit: contain;
-    transition: all 0.3s ease;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--light-color);
+    transition: transform 0.3s ease;
 }
 
 .footer-logo:hover {
-    transform: scale(1.1);
-    box-shadow: 0 2px 8px rgba(255,255,255,0.2);
+    transform: scale(1.1) rotate(10deg);
 }
 
-.footer-social-link {
-    transition: all 0.3s ease;
-    padding: 8px;
-    border-radius: 50%;
+.social-link-item {
+    color: white;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
 }
 
-.footer-social-link:hover {
-    background: rgba(239, 237, 227, 0.1);
-    transform: translateY(-2px);
-    color: #B99D57 !important;
+.social-link-item:hover {
+    color: var(--primary-color) !important; /* Mantendo a cor do hover */
+    transform: translateY(-3px);
+}
+
+/* Responsive adjustments for the footer */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-item {
+        flex-basis: auto; /* Reset basis for stacking */
+        margin-bottom: 1rem;
+    }
+
+    .footer-logo-container, .footer-socials {
+        justify-content: center;
+    }
+
+    .footer-item:last-child {
+        margin-bottom: 0;
+    }
 }
 
 /* Responsive Typography */
